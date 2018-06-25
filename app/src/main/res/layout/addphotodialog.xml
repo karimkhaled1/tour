@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:numColumns="5"
+        android:layout_margin="5dp"
+        android:id="@+id/gridView">
+    </GridView>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gridView"
+        android:layout_marginStart="66dp"
+        android:src="@android:drawable/ic_menu_camera"
+        android:id="@+id/CameraButton" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/CameraButton"
+        android:id="@+id/GalleryButton"
+        android:src="@android:drawable/ic_menu_gallery" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CameraButton"
+        android:id="@+id/closeDialog"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/CameraButton"
+        android:text="done" />
+</RelativeLayout>

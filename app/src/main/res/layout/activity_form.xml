@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30sp"
+            android:text="Title:"/>
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="35sp"
+                android:id="@+id/title"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="description"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="200sp"
+            android:inputType="textMultiLine"
+            android:id="@+id/description"/>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="upload images"
+            android:onClick="UploadImages"
+            android:id="@+id/uploadImageButton"
+            android:layout_gravity="center"/>
+        <EditText
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:hint="alexandria"
+            android:id="@+id/city"/>
+        <EditText
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:hint="10LE"
+            android:id="@+id/price"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="the below will not be shown to customers only for virification"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="upload video "
+            android:onClick="uploadVideo"
+            android:id="@+id/uploadVideoButton"/>
+
+
+    </LinearLayout>
+
+</ScrollView>
