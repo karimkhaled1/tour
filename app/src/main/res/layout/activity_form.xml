@@ -52,6 +52,16 @@
             android:layout_height="wrap_content"
             android:hint="10LE"
             android:id="@+id/price"/>
+        <EditText
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:hint="food"
+            android:id="@+id/cat"/>
+        <EditText
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:hint="food"
+            android:id="@+id/address"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -62,6 +72,12 @@
             android:text="upload video "
             android:onClick="uploadVideo"
             android:id="@+id/uploadVideoButton"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="submit"
+            android:layout_gravity="center"
+            android:onClick="submit"/>
 
 
     </LinearLayout>
