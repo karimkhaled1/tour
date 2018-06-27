@@ -18,8 +18,10 @@
             android:layout_height="30sp"
             android:text="Title:"/>
             <EditText
-                android:layout_width="50dp"
-                android:layout_height="35sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:layout_marginTop="15sp"
                 android:id="@+id/title"/>
         </LinearLayout>
         <TextView
@@ -31,37 +33,60 @@
             android:layout_height="200sp"
             android:inputType="textMultiLine"
             android:id="@+id/description"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="catigory"/>
         <Spinner
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/spinner" />
+            android:id="@+id/spinnercat"
+            android:layout_marginBottom="10sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="city"/>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnercity" />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="upload images"
             android:onClick="UploadImages"
-            android:id="@+id/uploadImageButton"
-            android:layout_gravity="center"/>
-        <EditText
-            android:layout_width="60dp"
-            android:layout_height="wrap_content"
-            android:hint="alexandria"
-            android:id="@+id/city"/>
-        <EditText
-            android:layout_width="60dp"
-            android:layout_height="wrap_content"
-            android:hint="10LE"
-            android:id="@+id/price"/>
-        <EditText
-            android:layout_width="60dp"
-            android:layout_height="wrap_content"
-            android:hint="food"
-            android:id="@+id/cat"/>
-        <EditText
-            android:layout_width="60dp"
-            android:layout_height="wrap_content"
-            android:hint="food"
-            android:id="@+id/address"/>
+            android:id="@+id/uploadImageButton"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="price: "/>
+            <EditText
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:hint="10"
+                android:id="@+id/price"/>
+        </LinearLayout>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="address"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="25-xxx-xxxx"
+        android:id="@+id/address"/>
+
+</LinearLayout>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
