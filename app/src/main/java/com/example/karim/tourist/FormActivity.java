@@ -142,7 +142,7 @@ public class FormActivity extends Activity implements View.OnClickListener {
         database.child("title").setValue(title.getText().toString());
         database.child("des").setValue(des.getText().toString());
         database.child("price").setValue(Integer.parseInt( price.getText().toString()));
-        database.child("address").setValue(Integer.parseInt( address.getText().toString()));
+        database.child("address").setValue(address.getText().toString());
     }
     private void UploadToStorage() {
         StorageReference StorageRef= FirebaseStorage.getInstance().getReference();
